@@ -1,0 +1,41 @@
+{
+  "name": "angular-jrpc-proto-gen",
+  "version": "0.0.1",
+  "description": "Generate jsonrpc-gateway client for Angular 6+",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fix": "npm run lint -- --fix",
+    "clean": "rm -rf lib",
+    "build": "npm run clean && tsc"
+  },
+  "bin": {
+    "angular-jrpc-proto-gen": "bin/angular-jrpc-proto-gen"
+  },
+  "repository": "https://github.com/bazilio91/angular-jrpc-proto-gen",
+  "keywords": [
+    "protobuf",
+    "protoc",
+    "typescript",
+    "ts",
+    "grpc",
+    "service",
+    "proto3",
+    "angular"
+  ],
+  "author": "bazilio91@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "google-protobuf": "^3.6.1"
+  },
+  "devDependencies": {
+    "@types/google-protobuf": "^3.2.7",
+    "@types/lodash": "^4.14.106",
+    "@types/node": "^7.0.52",
+    "lodash": "^4.17.5",
+    "lodash.isequal": "^4.5.0",
+    "source-map-support": "^0.4.18",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}
